@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c63814-aba6-4a22-8688-8105586b2f3d" name="Changes" comment="" />
+    <list default="true" id="65c63814-aba6-4a22-8688-8105586b2f3d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/AutorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/GenericController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/LivroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/LoginViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/dto/AutorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/dto/CadastroLivroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/dto/ErroCampo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/dto/ErroResposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/dto/ResultadoPesquisaLivroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/mappers/AutorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/controller/mappers/LivroMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/exceptions/CampoInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/exceptions/OperacaoNaoPermitidaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/exceptions/RegistroDuplicadoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/repository/specs/LivroSpecs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/service/AutorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/service/LivroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/validator/AutorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/validator/LivroValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryapi/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/comandos-sql.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/comandos-sql.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/model/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/model/Autor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/model/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/model/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/repository/AutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/repository/AutorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/repository/LivroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/java/io/github/giih06/libraryapi/repository/LivroRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/test/java/io/github/giih06/libraryapi/repository/AutorRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/test/java/io/github/giih06/libraryapi/repository/AutorRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryapi/src/test/java/io/github/giih06/libraryapi/repository/LivroRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapi/src/test/java/io/github/giih06/libraryapi/repository/LivroRepositoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +45,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;giih06&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/giih06/Java-Udemy.git&quot;,
+    &quot;accountId&quot;: &quot;4b3d81f4-46ea-4a5f-8954-6191bfc951a6&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2uHdu7agTH2MhYiM2chFWZwA7fo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,10 +72,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Desktop-01/Documents/GitHub/Java-Udemy",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,6 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1741909661997</updated>
       <workItem from="1741909666033" duration="59000" />
+      <workItem from="1749069661412" duration="18000" />
+      <workItem from="1749504851672" duration="6000" />
     </task>
     <servers />
   </component>

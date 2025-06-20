@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @SpringBootTest
@@ -33,7 +34,7 @@ class LivroRepositoryTest {
 
 // Adicionando um autor já existente do banco de dados
         Autor autorMaria = autorRepository
-                .findById(UUID.fromString("b1be9aa3-c1ed-47ad-bdeb-9aa523312ceb"))
+                .findById(UUID.fromString("b6522dfb-2d9c-42bd-a991-81566d48ccc0"))
                 .orElse(null);
 
         livro.setAutor(autorMaria);
@@ -118,8 +119,8 @@ class LivroRepositoryTest {
         Livro livro = livroRepository.findById(id).orElse(null);
         System.out.println("Livro: ");
         System.out.println(livro.getTitulo());
-//        System.out.println("Autor: ");
-//        System.out.println(livro.getAutor().getNome());
+    //  System.out.println("Autor: ");
+    //  System.out.println(livro.getAutor().getNome());
     }
 
     @Test
@@ -130,8 +131,8 @@ class LivroRepositoryTest {
 
     @Test
     void pesquisarPorISBNTest() {
-        List<Livro> lista = livroRepository.findByIsbn("32234-53322");
-        lista.forEach(System.out::println);
+        Optional<Livro> livro = livroRepository.findByIsbn("32234-53322");
+        livro.ifPresent(System.out::println);
     }
 
     @Test

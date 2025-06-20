@@ -4,6 +4,7 @@ import io.github.giih06.libraryapi.model.Autor;
 import io.github.giih06.libraryapi.model.GeneroLivro;
 import io.github.giih06.libraryapi.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,12 +13,13 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 /**
  * @see LivroRepositoryTest
  */
-public interface LivroRepository extends JpaRepository<Livro, UUID> {
+public interface LivroRepository extends JpaRepository<Livro, UUID>, JpaSpecificationExecutor<Livro> {
 
     // Query Method
     // SELECT * FROM livro WHERE id_autor = id
@@ -27,7 +29,7 @@ public interface LivroRepository extends JpaRepository<Livro, UUID> {
     List<Livro> findByTitulo(String titulo);
 
     // Pesquisar livro por ISBN
-    List<Livro> findByIsbn(String isbn);
+    Optional<Livro> findByIsbn(String isbn);
 
     // Pesquisar livro por titulo e preço
     // SELECT * FROM livro WHERE titulo = ? AND preco = ?
@@ -102,6 +104,5 @@ public interface LivroRepository extends JpaRepository<Livro, UUID> {
     @Query(" UPDATE Livro set dataPublicacao = ?1 ")
     void updateDataPublicacao(LocalDate novaData);
 
-
-
+    boolean existsByAutor(Autor autor);
 }
