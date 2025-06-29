@@ -1,4 +1,4 @@
-# 📚 LibraryAPI
+# LibraryAPI
 
 📋 **Descrição do Projeto**  
 A **LibraryAPI** é uma aplicação backend desenvolvida em **Java 21** com **Spring Boot**, voltada para o gerenciamento de uma biblioteca digital. A aplicação permite o cadastro, pesquisa e controle de livros, autores, usuários e autenticação OAuth2, seguindo boas práticas de arquitetura RESTful.
@@ -55,17 +55,19 @@ A aplicação é modular e organizada em domínios claros que representam os pri
 
 ## 📁 Estrutura do Projeto
 
+```
 LibraryAPI/
 │
-├── model/ → Entidades JPA (Livro, Autor, Usuario, Client)
-├── controller/ → Endpoints REST com segurança e documentação Swagger
-├── service/ → Lógica de negócio e transações
-├── repository/ → Interfaces JPA e Specifications
-├── validator/ → Regras de validação customizadas
-├── dto/ → Objetos de transferência com validações
-├── mappers/ → MapStruct para conversão DTO ↔ Entity
-├── config/ → Configurações de segurança, banco e Swagger
-└── security/ → Implementações customizadas de autenticação
+├── model/               → Entidades JPA (Livro, Autor, Usuario, Client)
+├── controller/          → Endpoints REST com segurança e Swagger
+├── service/             → Lógica de negócio
+├── repository/          → Interfaces JPA e Specifications
+├── validator/           → Regras de validação
+├── dto/                 → Objetos de transferência de dados
+├── mappers/             → MapStruct para conversão entre DTO ↔ Entity
+├── config/              → Configurações (segurança, banco, OAuth, Swagger)
+└── security/            → Lógica de autenticação personalizada
+```
 
 ---
 
@@ -77,25 +79,24 @@ LibraryAPI/
 - Maven instalado
 
 ### 📝 Passos
-
-\`\`\`bash
+```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/LibraryAPI.git
+git clone https://github.com/giih06/LibraryAPI.git
 
 # Acesse o diretório do projeto
 cd LibraryAPI
 
-# Configure o banco no arquivo src/main/resources/application.yml
+# Configure o banco no arquivo application.yml
 
 # Execute as migrações do banco
 mvn flyway:migrate
 
 # Inicie a aplicação
 mvn spring-boot:run
-\`\`\`
+```
 
 ### 🔎 Acesse a documentação da API:
-[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- `http://localhost:8080/swagger-ui.html`
 
 ---
 
