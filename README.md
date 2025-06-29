@@ -1,4 +1,3 @@
-readme_content = """
 # 📚 LibraryAPI
 
 📋 **Descrição do Projeto**  
@@ -56,19 +55,17 @@ A aplicação é modular e organizada em domínios claros que representam os pri
 
 ## 📁 Estrutura do Projeto
 
-\`\`\`
 LibraryAPI/
 │
-├── model/               → Entidades JPA (Livro, Autor, Usuario, Client)
-├── controller/          → Endpoints REST com segurança e documentação Swagger
-├── service/             → Lógica de negócio e transações
-├── repository/          → Interfaces JPA e Specifications
-├── validator/           → Regras de validação customizadas
-├── dto/                 → Objetos de transferência com validações
-├── mappers/             → MapStruct para conversão DTO ↔ Entity
-├── config/              → Configurações de segurança, banco e Swagger
-└── security/            → Implementações customizadas de autenticação
-\`\`\`
+├── model/ → Entidades JPA (Livro, Autor, Usuario, Client)
+├── controller/ → Endpoints REST com segurança e documentação Swagger
+├── service/ → Lógica de negócio e transações
+├── repository/ → Interfaces JPA e Specifications
+├── validator/ → Regras de validação customizadas
+├── dto/ → Objetos de transferência com validações
+├── mappers/ → MapStruct para conversão DTO ↔ Entity
+├── config/ → Configurações de segurança, banco e Swagger
+└── security/ → Implementações customizadas de autenticação
 
 ---
 
@@ -113,4 +110,3 @@ Abra uma issue ou envie um pull request com sugestões, melhorias ou correções
 
 Este projeto está licenciado sob a **MIT License**.  
 Consulte o arquivo `LICENSE` para mais detalhes.
-"""
